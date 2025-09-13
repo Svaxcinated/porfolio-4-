@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sophia Pagal - Information Technology student and developer portfolio showcasing projects, skills, and experience">
+    <meta name="author" content="Sophia Verhon Pagal">
+    <meta name="keywords" content="developer, portfolio, IT student, web development, mobile apps">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sophia Pagal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Primary Navigation -->
+    <header class="header-nav" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#profile" aria-describedby="nav-home-desc">Home</a></li>
+                <li><a href="#about" aria-describedby="nav-about-desc">About</a></li>
+                <li><a href="#projects" aria-describedby="nav-projects-desc">Projects</a></li>
+                <li><a href="#experience" aria-describedby="nav-experience-desc">Experience</a></li>
+                <li><a href="#certifications" aria-describedby="nav-certs-desc">Certifications</a></li>
+                <li><a href="#contact" aria-describedby="nav-contact-desc">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-container" role="main">
+        
+        <!-- Hero/Profile Section -->
+        <section id="profile" aria-labelledby="profile-heading">
+            <div class="intro-container">
+                <img src="/images/pagal.png" alt="Sophia Pagal - Professional headshot" class="profile-pic">
+                <div class="intro-text">
+                    <header>
+                        <h1 id="profile-heading" class="greetings">
+                            <span class="name">Sophia Pagal</span>
+                        </h1>
+                        <p class="subtitle">Developer</p>
+                    </header>
+
+                    <nav class="social-links" aria-label="Social media links">
+                        <a href="https://www.facebook.com/pia.pagal.7" target="_blank" rel="noopener noreferrer" aria-label="Visit Sophia's Facebook profile">
+                            <img src="images/Facebook-logo.png" alt="" width="24" height="24" role="img">
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://github.com/Svaxcinated" target="_blank" rel="noopener noreferrer" aria-label="Visit Sophia's GitHub profile">
+                            <img src="images/github.jpg" alt="" width="24" height="24" role="img">
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a href="mailto:pgssvap@gmail.com" aria-label="Send email to Sophia">
+                            <img src="images/gmail-logo-app-icon-rounded-1.png" alt="" width="24" height="24" role="img">
+                            <span class="sr-only">Email</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="about-me">
+                <h2 id="about-heading">About Me</h2>
+                <div class="about-intro">
+                    <p>Hello! I am Sophia Verhon Pagal, I am currently 19 years old studying Information Technology
+                    at the University of Mindanao Digos College. I live in Digos City, Davao del Sur.
+                    I'm currently exploring the endless possibilities of technology and its applications in solving real-world
+                    problems. My journey in the field of Information Technology has been both exciting and enriching, and I look forward
+                    to continuing to learn and grow as I pursue my academic and career goals in this field.</p>
+                </div>
+                
+                <!-- Tab Navigation -->
+                <nav class="about-tabs" role="tablist" aria-label="About me sections">
+                    <button role="tab" aria-selected="true" aria-controls="education-panel" id="education-tab" class="tab-button">
+                        Education
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="skills-panel" id="skills-tab" class="tab-button">
+                        Skills
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="personal-panel" id="personal-tab" class="tab-button">
+                        Personal Info
+                    </button>
+                </nav>
+        
+                <!-- Tab Panels -->
+                <div class="tab-content">
+                    <div id="education-panel" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                        <h3 class="sr-only">Educational Background</h3>
+                        <dl class="education-list">
+                            <div class="education-item">
+                                <dt>University Of Mindanao Digos College</dt>
+                                <dd>2022-present</dd>
+                            </div>
+                            <div class="education-item">
+                                <dt>University Of Mindanao Digos College - Senior High</dt>
+                                <dd>2020-2022</dd>
+                            </div>
+                            <div class="education-item">
+                                <dt>Digos City National High School - Junior High</dt>
+                                <dd>2016-2020</dd>
+                            </div>
+                            <div class="education-item">
+                                <dt>San Miguel Elementary School</dt>
+                                <dd>2010-2016</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    
+                    <div id="skills-panel" role="tabpanel" aria-labelledby="skills-tab" hidden tabindex="0">
+                        <h3 class="sr-only">Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span>HTML & CSS</span>
+                                <img src="images/htmlcss.png" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>JavaScript</span>
+                                <img src="images/js.png" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>PHP</span>
+                                <img src="images/php.png" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>MySQL</span>
+                                <img src="images/mysql.png" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>Firebase</span>
+                                <img src="images/firebase.png" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>Git & GitHub</span>
+                                <img src="images/github.jpg" alt="" width="20" height="20" role="img">
+                            </li>
+                            <li class="skill-item">
+                                <span>Figma</span>
+                                <img src="images/figma.png" alt="" width="20" height="20" role="img">
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="personal-panel" role="tabpanel" aria-labelledby="personal-tab" hidden tabindex="0">
+                        <h3 class="sr-only">Personal Information</h3>
+                        <dl class="personal-info">
+                            <div class="info-item">
+                                <dt>Age:</dt>
+                                <dd>21 Years old</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Degree:</dt>
+                                <dd>Bachelor of Science in Information Technology</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Birthdate:</dt>
+                                <dd>September 1, 2004</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Address:</dt>
+                                <dd>San Miguel Digos City, Davao del Sur, Philippines</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <header class="projects-header">
+                <h2 id="projects-heading">Projects</h2>
+            </header>
+            <div class="projects-scroll-wrapper">
+                <div class="projects-container" role="region" aria-label="Project showcase">
+                    <article class="projects-box">
+                        <div class="project-info">
+                            <figure class="frame-mobile">
+                                <img src="images/iPhone 14 & 15 Pro Max - 4.png" alt="Fime mobile application interface">
+                            </figure>
+                            <div class="project-details">
+                                <h3 class="project-title">Fime Mobile Application</h3>
+                                <p>Fime is a mobile application-- an E-commerce application that has a feature of augmented
+                                reality where users can utilize digital fitting it also uses shein API</p>
+                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
+                                    <span class="tech-tools" role="listitem">Android Studio</span>
+                                    <span class="tech-tools" role="listitem">Java Native</span>
+                                    <span class="tech-tools" role="listitem">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects-box">
+                        <div class="project-info">
+                            <figure class="frame-web">
+                                <img src="images/iPhone 14 & 15 Pro Max - 4.png" alt="Higanteng Laagan web application interface">
+                            </figure>
+                            <div class="project-details">
+                                <h3 class="project-web">Higanteng Laagan Web Application</h3>
+                                <p>Higanteng laagan travel and tours web application is a booking system that lets users book tours 
+                                systematically-- one of its features utilizes payment API</p>
+                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
+                                    <span class="tech-tools" role="listitem">PHP</span>
+                                    <span class="tech-tools" role="listitem">JavaScript</span>
+                                    <span class="tech-tools" role="listitem">MySQL</span>
+                                    <span class="tech-tools" role="listitem">HTML&CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects-box">
+                        <div class="project-info">
+                            <figure class="frame-mobile">
+                                <img src="images/iPhone 14 & 15 Pro Max - 4.png" alt="Sample project 3 interface">
+                            </figure>
+                            <div class="project-details">
+                                <h3 class="project-title">Sample Project 3</h3>
+                                <p>This is a sample third project to demonstrate the horizontal scrolling functionality. You can add more projects here.</p>
+                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
+                                    <span class="tech-tools" role="listitem">React</span>
+                                    <span class="tech-tools" role="listitem">Node.js</span>
+                                    <span class="tech-tools" role="listitem">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+            <div class="experience-timeline">
+                <article class="experience-item">
+                    <h3>Junior Developer Intern</h3>
+                    <div class="company">Tech Company Name</div>
+                    <time class="duration" datetime="2024-06">June 2024 - Present</time>
+                    <p>Worked on web development projects using modern technologies. Collaborated with senior developers to create responsive web applications and mobile apps.</p>
+                </article>
+                <article class="experience-item">
+                    <h3>Freelance Web Developer</h3>
+                    <div class="company">Self-Employed</div>
+                    <time class="duration" datetime="2024-01/2024-05">January 2024 - May 2024</time>
+                    <p>Developed custom websites for small businesses using HTML, CSS, JavaScript, and PHP. Managed client relationships and project timelines.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" aria-labelledby="certifications-heading">
+            <h2 id="certifications-heading">Certifications</h2>
+            <div class="cert-grid" role="list">
+                <article class="cert-card" role="listitem">
+                    <img src="images/337796363_1255449168416467_8259316969629662586_n.jpg" alt="Microsoft Certificate" class="cert-logo">
+                    <h3>Microsoft Certificate</h3>
+                    <div class="issuer">Coursebank</div>
+                    <time class="date" datetime="2022">2022</time>
+                </article>
+                <article class="cert-card" role="listitem">
+                    <img src="images/336593505_210889984887515_9034002155602973533_n.jpg" alt="Designing Certificate" class="cert-logo">
+                    <h3>Designing Certificate</h3>
+                    <div class="issuer">Coursebank</div>
+                    <time class="date" datetime="2022">2022</time>
+                </article>
+                <article class="cert-card" role="listitem">
+                    <img src="images/334916329_778328960570309_6812977280858671456_n.jpg" alt="Google Workspace Certificate" class="cert-logo">
+                    <h3>Google Workspace Certificate</h3>
+                    <div class="issuer">Coursebank</div>
+                    <time class="date" datetime="2022">2022</time>
+                </article>
+                <article class="cert-card" role="listitem">
+                    <img src="images/greatlearning.png" alt="Basic Programming Certificate" class="cert-logo">
+                    <h3>Basic Programming</h3>
+                    <div class="issuer">Greatlearning</div>
+                    <time class="date" datetime="2022">2022</time>
+                </article>
+                <article class="cert-card" role="listitem">
+                    <h3>Database Management</h3>
+                    <div class="issuer">Cisco Networking Academy</div>
+                    <time class="date" datetime="2025">2025</time>
+                </article>
+                <article class="cert-card" role="listitem">
+                    <h3>Programming</h3>
+                    <div class="issuer">Cisco Networking Academy</div>
+                    <time class="date" datetime="2025">2025</time>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <address class="contact-details">
+                        <div class="contact-item">
+                            <h3>Email address</h3>
+                            <a href="mailto:pgssvap@gmail.com" aria-label="Send email to Sophia">📧 pgssvap@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Contact Number</h3>
+                            <a href="tel:+639918783695" aria-label="Call Sophia">📱 09918783695</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3>City address</h3>
+                            <span>📍 Digos City, Davao del Sur, Philippines</span>
+                        </div>
+                    </address>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="POST" novalidate>
+                        <h3 class="sr-only">Contact Form</h3>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" class="contact-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Screen reader only styles -->
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+    </style>
+    
+</body>
+</html>
