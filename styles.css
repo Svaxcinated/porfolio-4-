@@ -1205,3 +1205,329 @@ body {
     box-shadow: 0 6px 20px rgba(79, 195, 247, 0.5);
     transform: translateY(-3px);
 }
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Mobile First - Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .intro-container {
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    .profile-pic {
+        animation: scaleIn 0.6s ease-out 0.2s backwards;
+    }
+
+    .intro-text {
+        animation: fadeInUp 0.8s ease-out 0.3s backwards;
+    }
+
+    .social-links {
+        animation: fadeInUp 0.8s ease-out 0.5s backwards;
+    }
+
+    .about-me {
+        animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    }
+
+    .about-tabs {
+        animation: slideInLeft 0.6s ease-out 0.3s backwards;
+    }
+
+    .tab-content {
+        animation: fadeInUp 0.5s ease-out;
+    }
+
+    .projects-box {
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    .cert-card {
+        animation: scaleIn 0.6s ease-out backwards;
+    }
+
+    .contact-container {
+        animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    }
+
+    .cv-download-btn {
+        animation: pulse 2s ease-in-out infinite;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .intro-container {
+        animation: fadeInUp 0.7s ease-out;
+    }
+
+    .profile-pic {
+        animation: scaleIn 0.5s ease-out 0.2s backwards;
+    }
+
+    .intro-text {
+        animation: slideInRight 0.7s ease-out 0.3s backwards;
+    }
+
+    .social-links a {
+        animation: bounce 0.6s ease-out backwards;
+    }
+
+    .social-links a:nth-child(1) { animation-delay: 0.4s; }
+    .social-links a:nth-child(2) { animation-delay: 0.5s; }
+    .social-links a:nth-child(3) { animation-delay: 0.6s; }
+
+    .about-me {
+        animation: fadeInUp 0.7s ease-out 0.2s backwards;
+    }
+
+    .projects-box {
+        animation: slideInLeft 0.7s ease-out;
+    }
+
+    .projects-box:nth-child(even) {
+        animation: slideInRight 0.7s ease-out;
+    }
+
+    .cert-card {
+        animation: scaleIn 0.5s ease-out backwards;
+    }
+
+    .cert-card:nth-child(1) { animation-delay: 0.1s; }
+    .cert-card:nth-child(2) { animation-delay: 0.2s; }
+    .cert-card:nth-child(3) { animation-delay: 0.3s; }
+    .cert-card:nth-child(4) { animation-delay: 0.4s; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .intro-container {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .profile-pic {
+        animation: scaleIn 0.5s ease-out 0.1s backwards;
+    }
+
+    .intro-text {
+        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    }
+
+    .about-me {
+        animation: slideInLeft 0.6s ease-out 0.1s backwards;
+    }
+
+    .tab-button {
+        animation: fadeInDown 0.5s ease-out backwards;
+    }
+
+    .tab-button:nth-child(1) { animation-delay: 0.2s; }
+    .tab-button:nth-child(2) { animation-delay: 0.3s; }
+    .tab-button:nth-child(3) { animation-delay: 0.4s; }
+
+    .projects-box {
+        animation: scaleIn 0.6s ease-out backwards;
+    }
+
+    .projects-box:nth-child(1) { animation-delay: 0.1s; }
+    .projects-box:nth-child(2) { animation-delay: 0.2s; }
+    .projects-box:nth-child(3) { animation-delay: 0.3s; }
+
+    .cert-card {
+        animation: fadeInUp 0.5s ease-out backwards;
+    }
+
+    .cert-card:nth-child(1) { animation-delay: 0.1s; }
+    .cert-card:nth-child(2) { animation-delay: 0.15s; }
+    .cert-card:nth-child(3) { animation-delay: 0.2s; }
+    .cert-card:nth-child(4) { animation-delay: 0.25s; }
+    .cert-card:nth-child(5) { animation-delay: 0.3s; }
+    .cert-card:nth-child(6) { animation-delay: 0.35s; }
+
+    .contact-info {
+        animation: slideInLeft 0.6s ease-out 0.2s backwards;
+    }
+
+    .contact-form-container {
+        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .intro-container {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .profile-pic {
+        animation: scaleIn 0.5s ease-out backwards;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .intro-text {
+        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    }
+
+    .about-me h2,
+    .projects-header h2,
+    #certifications h2,
+    #contact h2 {
+        animation: slideInLeft 0.5s ease-out backwards;
+    }
+
+    .projects-box {
+        animation: fadeInUp 0.6s ease-out backwards;
+    }
+
+    .projects-box:nth-child(1) { animation-delay: 0.1s; }
+    .projects-box:nth-child(2) { animation-delay: 0.2s; }
+    .projects-box:nth-child(3) { animation-delay: 0.3s; }
+
+    .cert-card {
+        animation: scaleIn 0.5s ease-out backwards;
+    }
+
+    .cert-card:nth-child(n+1):nth-child(-n+3) { animation-delay: 0.1s; }
+    .cert-card:nth-child(n+4):nth-child(-n+6) { animation-delay: 0.2s; }
+    .cert-card:nth-child(n+7):nth-child(-n+9) { animation-delay: 0.3s; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .intro-container {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .profile-pic {
+        animation: scaleIn 0.5s ease-out backwards;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+        transform: scale(1.05) rotate(2deg);
+    }
+
+    .intro-text {
+        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    }
+
+    .social-links a {
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+        animation: bounce 0.6s ease;
+    }
+
+    .about-me,
+    .projects-box,
+    .cert-card,
+    .contact-container {
+        animation: fadeInUp 0.5s ease-out backwards;
+    }
+
+    section {
+        transition: transform 0.3s ease;
+    }
+
+    .projects-box:hover,
+    .cert-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
