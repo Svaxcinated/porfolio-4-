@@ -877,6 +877,7 @@
 
 .message-button {
     background-color: skyblue;
+    border: none;
     border-radius: 30px;
     padding: 10px;
     color: white;
@@ -885,7 +886,7 @@
 }
 
 .message-button:hover {
-    background-color: deepskyblue;
+    background-color: #0056b3;
     box-shadow: 0 6px 20px rgba(79, 195, 247, 0.5);
     transform: translateY(-3px);
 }
