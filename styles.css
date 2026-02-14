@@ -53,7 +53,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(79, 195, 247, 0.2);
     z-index: 1000;
@@ -91,6 +91,7 @@ body {
 .nav-list li a:hover,
 .nav-list li a:focus {
     color: #ff6b6b;
+    text-decoration: none;
     transform: translateY(-2px);
     background: rgba(255, 107, 107, 0.05);
 }
@@ -108,12 +109,12 @@ body {
 }
 
 .nav-list li a:hover::after {
-    width: 80%;
+    width: 0;
 }
 
 /* CV Download Button */
 .cv-download-btn {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    background: blue;
     color: white;
     padding: 0.6rem 1.5rem;
     border-radius: 25px;
@@ -132,7 +133,7 @@ body {
 .cv-download-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
-    background: linear-gradient(135deg, #ff8e53 0%, #ff6b6b 100%);
+    background: linear-gradient(135deg, #4fc3f7, #ff6b6b);
 }
 
 .cv-download-btn:active {
@@ -1291,8 +1292,213 @@ body {
 
 /* Mobile First - Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    /* Mobile Header and Navigation */
+    .header-nav {
+        padding: 0.8rem 0;
+    }
+
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-list li a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        padding: 1rem;
+        min-height: 80vh;
+    }
+
     .intro-container {
         animation: fadeInUp 0.8s ease-out;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .greetings .name {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .intro-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Main Container */
+    .main-container {
+        padding-top: 70px;
+    }
+
+    /* About Section */
+    #about {
+        padding: 3rem 1rem;
+    }
+
+    .about-me > h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+    }
+
+    .about-tabs {
+        gap: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tab-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 1rem 0.6rem;
+    }
+
+    .skill-item img {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .skill-item span {
+        font-size: 0.85rem;
+    }
+
+    .education-list,
+    .personal-info {
+        max-width: 100%;
+    }
+
+    .education-item {
+        padding: 1rem;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 3rem 1rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects-container {
+        gap: 1.5rem;
+    }
+
+    .projects-box {
+        min-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .frame-mobile,
+    .frame-web {
+        width: 150px;
+        height: 225px;
+    }
+
+    .project-title,
+    .project-web {
+        font-size: 1.2rem;
+    }
+
+    .project-details p {
+        font-size: 0.9rem;
+    }
+
+    /* Experience Section */
+    #experience {
+        padding: 3rem 1rem;
+    }
+
+    #experience h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .experience-timeline::before {
+        left: 20px;
+    }
+
+    .experience-item {
+        margin-left: 50px;
+        padding: 1.5rem;
+    }
+
+    .experience-item::before {
+        left: -43px;
+        top: 25px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Certifications Section */
+    #certifications {
+        padding: 3rem 1rem;
+    }
+
+    #certifications h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .certifications-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+        padding: 1.5rem;
+    }
+
+    .cert-card h3 {
+        font-size: 1.1rem;
     }
 
     .profile-pic {
@@ -1329,6 +1535,54 @@ body {
 
     .contact-container {
         animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #contact {
+        padding: 3rem 1rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-info {
+        padding: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 2rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1rem;
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 0.9rem;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-textarea {
+        min-height: 100px;
+    }
+
+    .message-button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .cv-download-btn {
