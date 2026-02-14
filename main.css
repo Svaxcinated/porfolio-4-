@@ -1,0 +1,15 @@
+/* ====================================
+   MAIN CSS - Import All Stylesheets
+   ==================================== */
+
+/* Base styles, animations, and global config */
+@import url('./base.css');
+
+/* Header, navigation, and layout */
+@import url('./layout.css');
+
+/* All section styles */
+@import url('./sections.css');
+
+/* Responsive design for all breakpoints */
+@import url('./responsive.css');

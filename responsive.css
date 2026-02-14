@@ -1,0 +1,259 @@
+/* ====================================
+   RESPONSIVE DESIGN - ALL BREAKPOINTS
+   ==================================== */
+
+/* Mobile First - Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header-nav { padding: 0.8rem 0; }
+    .nav { padding: 0 1rem; }
+    .nav-list { flex-wrap: wrap; gap: 0.5rem; }
+    .nav-list li a { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+    .cv-download-btn { padding: 0.5rem 1rem; font-size: 0.8rem; }
+
+    #profile { padding: 1rem; min-height: 80vh; }
+    .intro-container { animation: fadeInUp 0.8s ease-out; flex-direction: column; gap: 2rem; }
+    .profile-pic { width: 250px; height: 250px; }
+    .intro-text { text-align: center; }
+    .greetings .name { font-size: 2.2rem; }
+    .subtitle { font-size: 1.1rem; }
+    .social-links { justify-content: center; }
+    .main-container { padding-top: 70px; }
+
+    #about { padding: 3rem 1rem; }
+    .about-me > h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .about-intro p { font-size: 1rem; }
+    .about-tabs { gap: 0.2rem; margin-bottom: 1.5rem; }
+    .tab-button { padding: 0.8rem 1rem; font-size: 0.9rem; }
+    .skills-list { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .skill-item { padding: 1rem 0.6rem; }
+    .skill-item img { width: 36px !important; height: 36px !important; }
+    .skill-item span { font-size: 0.85rem; }
+    .education-list, .personal-info { max-width: 100%; }
+    .education-item { padding: 1rem; }
+
+    #projects { padding: 3rem 1rem; }
+    .projects-header h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .projects-container { gap: 1.5rem; }
+    .projects-box { min-width: 100%; padding: 1.5rem; }
+    .frame-mobile, .frame-web { width: 150px; height: 225px; }
+    .project-title, .project-web { font-size: 1.2rem; }
+    .project-details p { font-size: 0.9rem; }
+
+    #experience { padding: 3rem 1rem; }
+    #experience h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .experience-timeline::before { left: 20px; }
+    .experience-item { margin-left: 50px; padding: 1.5rem; }
+    .experience-item::before { left: -43px; top: 25px; }
+    .experience-item h3 { font-size: 1.1rem; }
+    .experience-item p { font-size: 0.9rem; }
+
+    #certifications { padding: 3rem 1rem; }
+    #certifications h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .cert-grid { grid-template-columns: 1fr; }
+    .cert-card { padding: 1.5rem; }
+    .cert-card h3 { font-size: 1.1rem; }
+
+    .contact-container { animation: fadeInUp 0.8s ease-out 0.2s backwards; grid-template-columns: 1fr; gap: 2rem; }
+    #contact { padding: 3rem 1rem; }
+    #contact h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .contact-info { padding: 2rem; }
+    .contact-form-container { padding: 2rem; }
+    .contact-item { padding: 1rem; margin-bottom: 1.5rem; }
+    .contact-item h3 { font-size: 1rem; }
+    .contact-item a, .contact-item span { font-size: 0.9rem; }
+    .contact-input, .contact-textarea { padding: 0.8rem 1rem; font-size: 0.9rem; }
+    .contact-textarea { min-height: 100px; }
+    .message-button { padding: 0.8rem; font-size: 0.9rem; }
+    .cv-download-btn { animation: pulse 2s ease-in-out infinite; }
+
+    .close-button { top: -35px; width: 30px; height: 30px; font-size: 16px; }
+    .modal-content { max-width: 95%; max-height: 85%; }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header-nav { padding: 0.9rem 0; }
+    .nav-list li a { font-size: 0.9rem; padding: 0.45rem 0.9rem; }
+    .cv-download-btn { padding: 0.55rem 1.2rem; font-size: 0.85rem; }
+
+    #profile { padding: 1.5rem; min-height: 85vh; }
+    .intro-container { animation: fadeInUp 0.7s ease-out; flex-direction: column; gap: 2.5rem; }
+    .profile-pic { width: 280px; height: 280px; }
+    .greetings .name { font-size: 2.8rem; }
+    .subtitle { font-size: 1.2rem; }
+    .intro-text { text-align: center; }
+    .social-links { justify-content: center; gap: 1.2rem; }
+    .social-links a { width: 45px; height: 45px; }
+    .main-container { padding-top: 75px; }
+
+    #about { padding: 4rem 1.5rem; }
+    .about-me > h2 { font-size: 2.3rem; margin-bottom: 2.5rem; }
+    .about-intro p { font-size: 1.05rem; }
+    .tab-button { padding: 0.9rem 1.5rem; font-size: 0.95rem; }
+    .skills-list { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .skill-item { padding: 1.3rem 0.8rem; }
+
+    #projects { padding: 4rem 1.5rem; }
+    .projects-header h2 { font-size: 2.3rem; margin-bottom: 2.5rem; }
+    .projects-box { min-width: 85%; padding: 1.8rem; }
+    .frame-mobile, .frame-web { width: 170px; height: 250px; }
+    .project-title, .project-web { font-size: 1.3rem; }
+
+    #experience { padding: 4rem 1.5rem; }
+    #experience h2 { font-size: 2.3rem; margin-bottom: 2.5rem; }
+    .experience-item { margin-left: 60px; padding: 2rem; }
+
+    #certifications { padding: 4rem 1.5rem; }
+    #certifications h2 { font-size: 2.3rem; margin-bottom: 2.5rem; }
+    .cert-grid { grid-template-columns: repeat(2, 1fr); }
+    .cert-card { padding: 1.8rem; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-nav { padding: 1rem 0; }
+    .nav-list li a { font-size: 0.95rem; padding: 0.5rem 1rem; }
+    .cv-download-btn { padding: 0.6rem 1.4rem; font-size: 0.9rem; }
+
+    #profile { padding: 2rem; min-height: 90vh; }
+    .intro-container { animation: fadeInUp 0.6s ease-out; gap: 3rem; }
+    .profile-pic { width: 300px; height: 300px; }
+    .greetings .name { font-size: 3.2rem; }
+    .subtitle { font-size: 1.3rem; }
+    .main-container { padding-top: 80px; }
+
+    #about { padding: 5rem 2rem; }
+    .about-me > h2 { font-size: 2.7rem; margin-bottom: 2.8rem; }
+    .about-intro p { font-size: 1.1rem; }
+    .tab-button { padding: 1rem 1.8rem; font-size: 1rem; }
+    .skills-list { grid-template-columns: repeat(4, 1fr); gap: 1.4rem; }
+    .skill-item { padding: 1.4rem 1rem; }
+    .skill-item img { width: 44px !important; height: 44px !important; }
+
+    #projects { padding: 5rem 2rem; }
+    .projects-header h2 { font-size: 2.7rem; margin-bottom: 2.8rem; }
+    .projects-box { min-width: 450px; padding: 2rem; }
+    .frame-mobile, .frame-web { width: 190px; height: 280px; }
+    .project-title, .project-web { font-size: 1.4rem; }
+
+    #experience { padding: 5rem 2rem; }
+    #experience h2 { font-size: 2.7rem; margin-bottom: 2.8rem; }
+    .experience-timeline::before { left: 30px; }
+    .experience-item { margin-left: 70px; padding: 2.3rem; }
+    .experience-item::before { left: -55px; }
+
+    #certifications { padding: 5rem 2rem; }
+    #certifications h2 { font-size: 2.7rem; margin-bottom: 2.8rem; }
+    .cert-grid { grid-template-columns: repeat(3, 1fr); }
+    .cert-card { padding: 2rem; }
+
+    .contact-container { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    #contact { padding: 5rem 2rem; }
+    #contact h2 { font-size: 2.7rem; margin-bottom: 2.8rem; }
+    .contact-info { padding: 2.5rem; }
+    .contact-form-container { padding: 2.5rem; }
+
+    .skills-list { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; }
+    .skill-item { padding: 1.2rem 0.8rem; }
+    .skill-item img { width: 40px !important; height: 40px !important; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-nav { padding: 1rem 0; }
+    .nav-list li a { font-size: 0.98rem; padding: 0.5rem 1rem; }
+    .cv-download-btn { padding: 0.6rem 1.5rem; font-size: 0.95rem; }
+
+    #profile { padding: 2rem; min-height: 100vh; }
+    .intro-container { animation: fadeInUp 0.6s ease-out; gap: 3.5rem; }
+    .profile-pic { width: 320px; height: 320px; }
+    .greetings .name { font-size: 3.5rem; }
+    .subtitle { font-size: 1.4rem; }
+    .profile-pic:hover { animation: float 3s ease-in-out infinite; }
+    .main-container { padding-top: 80px; }
+
+    #about { padding: 6rem 2rem; }
+    .about-me > h2 { font-size: 2.8rem; margin-bottom: 3rem; }
+    .about-intro p { font-size: 1.1rem; max-width: 850px; }
+    .tab-button { padding: 1rem 2rem; font-size: 1rem; }
+    .skills-list { grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+    .skill-item { padding: 1.5rem 1.2rem; }
+    .skill-item img { width: 48px !important; height: 48px !important; }
+    .education-list { max-width: 850px; }
+
+    #projects { padding: 6rem 2rem; }
+    .projects-header h2 { font-size: 2.8rem; margin-bottom: 3rem; }
+    .projects-box { min-width: 480px; padding: 2.2rem; }
+    .frame-mobile, .frame-web { width: 210px; height: 300px; }
+    .project-title, .project-web { font-size: 1.5rem; }
+
+    #experience { padding: 6rem 2rem; }
+    #experience h2 { font-size: 2.8rem; margin-bottom: 3rem; }
+    .experience-timeline { max-width: 850px; }
+    .experience-item { margin-left: 70px; padding: 2.5rem; }
+
+    #certifications { padding: 6rem 2rem; }
+    #certifications h2 { font-size: 2.8rem; margin-bottom: 3rem; }
+    .cert-grid { grid-template-columns: repeat(3, 1fr); }
+    .cert-card { padding: 2.2rem; }
+
+    .contact-container { grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; }
+    #contact { padding: 6rem 2rem; }
+    #contact h2 { font-size: 2.8rem; margin-bottom: 3rem; }
+    .contact-info { padding: 3rem; }
+    .contact-form-container { padding: 3rem; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header-nav { padding: 1rem 0; }
+    .nav-list li a { font-size: 1rem; padding: 0.5rem 1.2rem; }
+    .cv-download-btn { padding: 0.7rem 1.8rem; font-size: 1rem; }
+
+    #profile { padding: 2rem; min-height: 100vh; }
+    .intro-container { animation: fadeInUp 0.6s ease-out; gap: 4rem; }
+    .profile-pic { animation: scaleIn 0.5s ease-out backwards; transition: transform 0.3s ease; width: 350px; height: 350px; }
+    .profile-pic:hover { transform: scale(1.05) rotate(2deg); animation: float 3s ease-in-out infinite; }
+    .greetings .name { font-size: 4rem; }
+    .subtitle { font-size: 1.5rem; }
+    .intro-text { animation: slideInRight 0.6s ease-out 0.2s backwards; }
+    .social-links { gap: 1.5rem; }
+    .social-links a { width: 50px; height: 50px; transition: all 0.3s ease; }
+    .social-links a:hover { animation: bounce 0.6s ease; transform: translateY(-3px) scale(1.15); }
+    .main-container { padding-top: 80px; }
+
+    #about { padding: 6rem 2rem; }
+    .about-me > h2 { font-size: 3rem; margin-bottom: 3rem; }
+    .about-intro p { font-size: 1.15rem; max-width: 900px; }
+    .tab-button { padding: 1rem 2rem; font-size: 1.05rem; }
+    .skills-list { grid-template-columns: repeat(6, 1fr); gap: 1.8rem; }
+    .skill-item { padding: 1.6rem 1.3rem; }
+    .skill-item img { width: 50px !important; height: 50px !important; }
+    .education-list { max-width: 900px; }
+
+    #projects { padding: 6rem 2rem; }
+    .projects-header h2 { font-size: 3rem; margin-bottom: 3rem; }
+    .projects-box { animation: fadeInUp 0.5s ease-out backwards; min-width: 450px; padding: 2.5rem; }
+    .projects-box:hover { transform: translateY(-10px); }
+    .frame-mobile, .frame-web { width: 230px; height: 330px; }
+    .project-title, .project-web { font-size: 1.6rem; }
+
+    #experience { padding: 6rem 2rem; }
+    #experience h2 { font-size: 3rem; margin-bottom: 3rem; }
+    .experience-timeline { max-width: 900px; }
+    .experience-item { margin-left: 70px; padding: 2.8rem; }
+
+    #certifications { padding: 6rem 2rem; }
+    #certifications h2 { font-size: 3rem; margin-bottom: 3rem; }
+    .cert-grid { grid-template-columns: repeat(4, 1fr); }
+    .cert-card { animation: fadeInUp 0.5s ease-out backwards; padding: 2.5rem; }
+    .cert-card:hover { transform: translateY(-5px); }
+
+    .contact-container { grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; }
+    #contact { padding: 6rem 2rem; }
+    #contact h2 { font-size: 3rem; margin-bottom: 3rem; }
+    .contact-info { padding: 3rem; height: fit-content; }
+    .contact-form-container { padding: 3rem; }
+
+    section { transition: transform 0.3s ease; }
+}

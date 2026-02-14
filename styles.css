@@ -1592,186 +1592,709 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Header/Nav */
+    .header-nav {
+        padding: 0.9rem 0;
+    }
+
+    .nav-list li a {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.9rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.55rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        padding: 1.5rem;
+        min-height: 85vh;
+    }
+
     .intro-container {
         animation: fadeInUp 0.7s ease-out;
+        flex-direction: column;
+        gap: 2.5rem;
     }
 
     .profile-pic {
-        animation: scaleIn 0.5s ease-out 0.2s backwards;
+        width: 280px;
+        height: 280px;
+    }
+
+    .greetings .name {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
     }
 
     .intro-text {
-        animation: slideInRight 0.7s ease-out 0.3s backwards;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 1.2rem;
     }
 
     .social-links a {
-        animation: bounce 0.6s ease-out backwards;
+        width: 45px;
+        height: 45px;
     }
 
-    .social-links a:nth-child(1) { animation-delay: 0.4s; }
-    .social-links a:nth-child(2) { animation-delay: 0.5s; }
-    .social-links a:nth-child(3) { animation-delay: 0.6s; }
+    /* Main Container */
+    .main-container {
+        padding-top: 75px;
+    }
 
-    .about-me {
-        animation: fadeInUp 0.7s ease-out 0.2s backwards;
+    /* About Section */
+    #about {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-me > h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .about-intro p {
+        font-size: 1.05rem;
+    }
+
+    .tab-button {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+    .skill-item {
+        padding: 1.3rem 0.8rem;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 4rem 1.5rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
     }
 
     .projects-box {
-        animation: slideInLeft 0.7s ease-out;
+        min-width: 85%;
+        padding: 1.8rem;
     }
 
-    .projects-box:nth-child(even) {
-        animation: slideInRight 0.7s ease-out;
+    .frame-mobile,
+    .frame-web {
+        width: 170px;
+        height: 250px;
+    }
+
+    .project-title,
+    .project-web {
+        font-size: 1.3rem;
+    }
+
+    /* Experience Section */
+    #experience {
+        padding: 4rem 1.5rem;
+    }
+
+    #experience h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .experience-item {
+        margin-left: 60px;
+        padding: 2rem;
+    }
+
+    /* Certifications Section */
+    #certifications {
+        padding: 4rem 1.5rem;
+    }
+
+    #certifications h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .certifications-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cert-card {
-        animation: scaleIn 0.5s ease-out backwards;
+        padding: 1.8rem;
     }
-
-    .cert-card:nth-child(1) { animation-delay: 0.1s; }
-    .cert-card:nth-child(2) { animation-delay: 0.2s; }
-    .cert-card:nth-child(3) { animation-delay: 0.3s; }
-    .cert-card:nth-child(4) { animation-delay: 0.4s; }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Header/Nav */
+    .header-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-list li a {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        padding: 2rem;
+        min-height: 90vh;
+    }
+
     .intro-container {
         animation: fadeInUp 0.6s ease-out;
+        gap: 3rem;
     }
 
     .profile-pic {
-        animation: scaleIn 0.5s ease-out 0.1s backwards;
+        width: 300px;
+        height: 300px;
     }
 
-    .intro-text {
-        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    .greetings .name {
+        font-size: 3.2rem;
     }
 
-    .about-me {
-        animation: slideInLeft 0.6s ease-out 0.1s backwards;
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    /* Main Container */
+    .main-container {
+        padding-top: 80px;
+    }
+
+    /* About Section */
+    #about {
+        padding: 5rem 2rem;
+    }
+
+    .about-me > h2 {
+        font-size: 2.7rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .about-intro p {
+        font-size: 1.1rem;
     }
 
     .tab-button {
-        animation: fadeInDown 0.5s ease-out backwards;
+        padding: 1rem 1.8rem;
+        font-size: 1rem;
     }
 
-    .tab-button:nth-child(1) { animation-delay: 0.2s; }
-    .tab-button:nth-child(2) { animation-delay: 0.3s; }
-    .tab-button:nth-child(3) { animation-delay: 0.4s; }
+    .skills-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.4rem;
+    }
+
+    .skill-item {
+        padding: 1.4rem 1rem;
+    }
+
+    .skill-item img {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 5rem 2rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2.7rem;
+        margin-bottom: 2.8rem;
+    }
 
     .projects-box {
-        animation: scaleIn 0.6s ease-out backwards;
+        min-width: 450px;
+        padding: 2rem;
     }
 
-    .projects-box:nth-child(1) { animation-delay: 0.1s; }
-    .projects-box:nth-child(2) { animation-delay: 0.2s; }
-    .projects-box:nth-child(3) { animation-delay: 0.3s; }
+    .frame-mobile,
+    .frame-web {
+        width: 190px;
+        height: 280px;
+    }
+
+    .project-title,
+    .project-web {
+        font-size: 1.4rem;
+    }
+
+    /* Experience Section */
+    #experience {
+        padding: 5rem 2rem;
+    }
+
+    #experience h2 {
+        font-size: 2.7rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .experience-timeline::before {
+        left: 30px;
+    }
+
+    .experience-item {
+        margin-left: 70px;
+        padding: 2.3rem;
+    }
+
+    .experience-item::before {
+        left: -55px;
+    }
+
+    /* Certifications Section */
+    #certifications {
+        padding: 5rem 2rem;
+    }
+
+    #certifications h2 {
+        font-size: 2.7rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .certifications-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .cert-card {
-        animation: fadeInUp 0.5s ease-out backwards;
+        padding: 2rem;
     }
 
-    .cert-card:nth-child(1) { animation-delay: 0.1s; }
-    .cert-card:nth-child(2) { animation-delay: 0.15s; }
-    .cert-card:nth-child(3) { animation-delay: 0.2s; }
-    .cert-card:nth-child(4) { animation-delay: 0.25s; }
-    .cert-card:nth-child(5) { animation-delay: 0.3s; }
-    .cert-card:nth-child(6) { animation-delay: 0.35s; }
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    #contact {
+        padding: 5rem 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2.7rem;
+        margin-bottom: 2.8rem;
+    }
 
     .contact-info {
-        animation: slideInLeft 0.6s ease-out 0.2s backwards;
+        padding: 2.5rem;
     }
 
     .contact-form-container {
-        animation: slideInRight 0.6s ease-out 0.2s backwards;
+        padding: 2.5rem;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Header/Nav */
+    .header-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-list li a {
+        font-size: 0.98rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        padding: 2rem;
+        min-height: 100vh;
+    }
+
     .intro-container {
         animation: fadeInUp 0.6s ease-out;
+        gap: 3.5rem;
     }
 
     .profile-pic {
-        animation: scaleIn 0.5s ease-out backwards;
-        transition: transform 0.3s ease;
+        width: 320px;
+        height: 320px;
+    }
+
+    .greetings .name {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
     }
 
     .profile-pic:hover {
         animation: float 3s ease-in-out infinite;
     }
 
-    .intro-text {
-        animation: slideInRight 0.6s ease-out 0.2s backwards;
+    /* Main Container */
+    .main-container {
+        padding-top: 80px;
     }
 
-    .about-me h2,
-    .projects-header h2,
-    #certifications h2,
-    #contact h2 {
-        animation: slideInLeft 0.5s ease-out backwards;
+    /* About Section */
+    #about {
+        padding: 6rem 2rem;
+    }
+
+    .about-me > h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-intro p {
+        font-size: 1.1rem;
+        max-width: 850px;
+    }
+
+    .tab-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .skill-item img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .education-list {
+        max-width: 850px;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 6rem 2rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
     }
 
     .projects-box {
-        animation: fadeInUp 0.6s ease-out backwards;
+        min-width: 480px;
+        padding: 2.2rem;
     }
 
-    .projects-box:nth-child(1) { animation-delay: 0.1s; }
-    .projects-box:nth-child(2) { animation-delay: 0.2s; }
-    .projects-box:nth-child(3) { animation-delay: 0.3s; }
+    .frame-mobile,
+    .frame-web {
+        width: 210px;
+        height: 300px;
+    }
+
+    .project-title,
+    .project-web {
+        font-size: 1.5rem;
+    }
+
+    /* Experience Section */
+    #experience {
+        padding: 6rem 2rem;
+    }
+
+    #experience h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .experience-timeline {
+        max-width: 850px;
+    }
+
+    .experience-item {
+        margin-left: 70px;
+        padding: 2.5rem;
+    }
+
+    /* Certifications Section */
+    #certifications {
+        padding: 6rem 2rem;
+    }
+
+    #certifications h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .certifications-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .cert-card {
-        animation: scaleIn 0.5s ease-out backwards;
+        padding: 2.2rem;
     }
 
-    .cert-card:nth-child(n+1):nth-child(-n+3) { animation-delay: 0.1s; }
-    .cert-card:nth-child(n+4):nth-child(-n+6) { animation-delay: 0.2s; }
-    .cert-card:nth-child(n+7):nth-child(-n+9) { animation-delay: 0.3s; }
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        max-width: 1000px;
+    }
+
+    #contact {
+        padding: 6rem 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-info {
+        padding: 3rem;
+    }
+
+    .contact-form-container {
+        padding: 3rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    /* Header/Nav */
+    .header-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.7rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        padding: 2rem;
+        min-height: 100vh;
+    }
+
     .intro-container {
         animation: fadeInUp 0.6s ease-out;
+        gap: 4rem;
     }
 
     .profile-pic {
         animation: scaleIn 0.5s ease-out backwards;
         transition: transform 0.3s ease;
+        width: 350px;
+        height: 350px;
     }
 
     .profile-pic:hover {
         transform: scale(1.05) rotate(2deg);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .greetings .name {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
     }
 
     .intro-text {
         animation: slideInRight 0.6s ease-out 0.2s backwards;
     }
 
+    .social-links {
+        gap: 1.5rem;
+    }
+
     .social-links a {
+        width: 50px;
+        height: 50px;
         transition: all 0.3s ease;
     }
 
     .social-links a:hover {
         animation: bounce 0.6s ease;
+        transform: translateY(-3px) scale(1.15);
     }
 
-    .about-me,
-    .projects-box,
-    .cert-card,
-    .contact-container {
+    /* Main Container */
+    .main-container {
+        padding-top: 80px;
+    }
+
+    /* About Section */
+    #about {
+        padding: 6rem 2rem;
+    }
+
+    .about-me > h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-intro p {
+        font-size: 1.15rem;
+        max-width: 900px;
+    }
+
+    .tab-button {
+        padding: 1rem 2rem;
+        font-size: 1.05rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.8rem;
+    }
+
+    .skill-item {
+        padding: 1.6rem 1.3rem;
+    }
+
+    .skill-item img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .education-list {
+        max-width: 900px;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 6rem 2rem;
+    }
+
+    .projects-header h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .projects-box {
         animation: fadeInUp 0.5s ease-out backwards;
+        min-width: 450px;
+        padding: 2.5rem;
+    }
+
+    .projects-box:hover {
+        transform: translateY(-10px);
+    }
+
+    .frame-mobile,
+    .frame-web {
+        width: 230px;
+        height: 330px;
+    }
+
+    .project-title,
+    .project-web {
+        font-size: 1.6rem;
+    }
+
+    /* Experience Section */
+    #experience {
+        padding: 6rem 2rem;
+    }
+
+    #experience h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .experience-timeline {
+        max-width: 900px;
+    }
+
+    .experience-item {
+        margin-left: 70px;
+        padding: 2.8rem;
+    }
+
+    /* Certifications Section */
+    #certifications {
+        padding: 6rem 2rem;
+    }
+
+    #certifications h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .certifications-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cert-card {
+        animation: fadeInUp 0.5s ease-out backwards;
+        padding: 2.5rem;
+    }
+
+    .cert-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        max-width: 1200px;
+    }
+
+    #contact {
+        padding: 6rem 2rem;
+    }
+
+    #contact h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-info {
+        padding: 3rem;
+        height: fit-content;
+    }
+
+    .contact-form-container {
+        padding: 3rem;
     }
 
     section {
         transition: transform 0.3s ease;
-    }
-
-    .projects-box:hover,
-    .cert-card:hover {
-        transform: translateY(-5px);
     }
 }
 
