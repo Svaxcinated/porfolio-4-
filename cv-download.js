@@ -1,10 +1,8 @@
-// CV Download functionality
 function downloadCV() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     
-    // Header with gradient background
-    doc.setFillColor(102, 126, 234);
+    doc.setFillColor(0, 0, 0);
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(28);
@@ -18,18 +16,16 @@ function downloadCV() {
     doc.text('Email: pgssvap@gmail.com  |  Phone: 09918783695', 105, 50, { align: 'center' });
     doc.text('Location: San Miguel, Digos City, Davao del Sur, Philippines', 105, 56, { align: 'center' });
     
-    // About Section
     doc.setFontSize(16);
-    doc.setTextColor(102, 126, 234);
+    doc.setTextColor(0, 0, 0);
     doc.text('ABOUT ME', 20, 70);
     doc.setFontSize(10);
     doc.setTextColor(0, 0, 0);
     const aboutText = '21-year-old Information Technology student at University of Mindanao Digos College, exploring the endless possibilities of technology and its applications in solving real-world problems.';
     doc.text(aboutText, 20, 78, { maxWidth: 170 });
     
-    // Education
     doc.setFontSize(16);
-    doc.setTextColor(102, 126, 234);
+    doc.setTextColor(0, 0, 0);
     doc.text('EDUCATION', 20, 100);
     doc.setFontSize(11);
     doc.setTextColor(0, 0, 0);
@@ -48,18 +44,16 @@ function downloadCV() {
     doc.setFontSize(10);
     doc.text('2016 - 2020', 20, 152);
     
-    // Skills
     doc.setFontSize(16);
-    doc.setTextColor(102, 126, 234);
+    doc.setTextColor(0, 0, 0);
     doc.text('SKILLS', 20, 170);
     doc.setFontSize(10);
     doc.setTextColor(0, 0, 0);
-    doc.text('HTML & CSS  •  JavaScript  •  PHP  •  MySQL  •  Firebase', 20, 178);
-    doc.text('Git & GitHub  •  Figma  •  Android Studio  •  Java Native', 20, 184);
+    doc.text('HTML & CSS  •  JavaScript  •  PHP  •  MySQL  •  Firebase • Nodejs ', 20, 178);
+    doc.text('Git & GitHub  •  Figma ', 20, 184);
     
-    // Projects
     doc.setFontSize(16);
-    doc.setTextColor(102, 126, 234);
+    doc.setTextColor(0, 0, 0);
     doc.text('PROJECTS', 20, 200);
     
     doc.setFontSize(12);
@@ -74,11 +68,17 @@ function downloadCV() {
     doc.setFontSize(10);
     doc.text('Travel and tours booking management system for systematic tour bookings.', 20, 236);
     doc.text('Technologies: PHP, JavaScript, MySQL, HTML & CSS', 20, 242);
+
+
+    doc.setFontSize(12);
+    doc.text('Intellect-Connect', 20, 230);
+    doc.setFontSize(10);
+    doc.text('A web-mobile based tutoring systems for Tutors and Elemenatry Students', 20, 236);
+    doc.text('Technologies: Reactjs, Nodejs, Firebase, Flutter', 20, 242);
     
-    // Certifications - Page 2
     doc.addPage();
     doc.setFontSize(16);
-    doc.setTextColor(102, 126, 234);
+    doc.setTextColor(0, 0, 0);
     doc.text('CERTIFICATIONS', 20, 20);
     doc.setFontSize(10);
     doc.setTextColor(0, 0, 0);
@@ -93,7 +93,10 @@ function downloadCV() {
         'Setting Up Computer Servers - TESDA (2025)',
         'Setting Up Computer Networks - TESDA (2025)',
         'Maintaining Computer System and Networks - TESDA (2025)',
-        'Introduction To CSS - TESDA (2025)'
+        'Introduction To CSS - TESDA (2025)',
+        'HTML&CSS - Information Technology Specialist (2026)',
+        'DATABASE - Information Technology Specialist (2026)',
+
     ];
     
     certs.forEach(cert => {

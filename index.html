@@ -1,88 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Sophia Pagal - Information Technology student and developer portfolio showcasing projects, skills, and experience">
-    <meta name="author" content="Sophia Verhon Pagal">
-    <meta name="keywords" content="developer, portfolio, IT student, web development, mobile apps">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sophia Verhon Pagal" />
+    <meta
+      name="description"
+      content="Sophia Verhon Pagal's portfolio website, showcasing work and projects in the field of software development."
+    />
+    <meta name="keywords" content="Sophia Verhon Pagal, software development, portfolio, projects, coding, web development, developer,profile" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <title>Sophia Pagal - Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="css/head.css">
 
-</head>
+    <title>Sophia Verhon Pagal</title>
+  </head>
+  <body>
+        <header id="header" class="header-nav">
+            <nav class="nav">
+                <ul class="nav-ul" >
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About Me</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#Certifications-Section">Certifications</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                    <li class="cv-download-btn">
+                        <button onclick="downloadCV()">
+                            Download Resume
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+        <main>
 
-    <!-- Primary Navigation -->
-    <header class="header-nav" role="banner">
-        <nav class="nav" role="navigation" aria-label="Main navigation">
-            <ul class="nav-list">
-                <li><a href="#profile" aria-describedby="nav-home-desc">Home</a></li>
-                <li><a href="#about" aria-describedby="nav-about-desc">About</a></li>
-                <li><a href="#projects" aria-describedby="nav-projects-desc">Projects</a></li>
-                <li><a href="#certifications" aria-describedby="nav-certs-desc">Certifications</a></li>
-                <li><a href="#contact" aria-describedby="nav-contact-desc">Contact</a></li>
-                <li>
-                    <button onclick="downloadCV()" class="cv-download-btn">
-                        📥 Download CV
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content Area -->
-    <main id="main-content" class="main-container" role="main">
-
-        <!-- Hero/Profile Section -->
-        <section id="profile" aria-labelledby="profile-heading">
-            <div class="intro-container">
-                <img src="images/pagal.png" alt="Sophia Pagal - Professional headshot" class="profile-pic">
-                <div class="intro-text">
-                    <header>
-                        <h1 id="profile-heading" class="greetings">
-                            <span class="name">Sophia Pagal</span>
-                        </h1>
-                        <p class="subtitle">Developer</p>
-                    </header>
-
-                    <nav class="social-links" aria-label="Social media links">
-                        <a href="https://www.facebook.com/pia.pagal.7" target="_blank" rel="noopener noreferrer"
-                            aria-label="Visit Sophia's Facebook profile">
-                            <img src="images/Facebook-logo.png" alt="" width="24" height="24" role="img">
-                            <span class="sr-only">Facebook</span>
+            <section id="home" >
+                <div>
+                    <figure>
+                    <img src="images/pagal.png" alt="Profile logo" width="200" height="200" style="border-radius: 50%; margin: 100px auto; display: block;" title="It's Me"/>
+                    <figcaption>
+                        <h1>Sophia Verhon Pagal</h1>
+                        <span>Software Developer</span>
+                    </figcaption>
+                    </figure>
+                    <nav>
+                        <a href="">
+                            <img src="images/Facebook-logo.png" alt="Facebook" width="30" height="30" title="Facebook" role="img"/>
                         </a>
-                        <a href="https://github.com/Svaxcinated" target="_blank" rel="noopener noreferrer"
-                            aria-label="Visit Sophia's GitHub profile">
-                            <img src="images/github.jpg" alt="" width="24" height="24" role="img">
-                            <span class="sr-only">GitHub</span>
+                        <a href="">
+                            <img src="images/github.jpg" alt="GitHub" width="30" height="30" title="GitHub" role="img"/>
                         </a>
-                        <a href="mailto:pgssvap@gmail.com" aria-label="Send email to Sophia">
-                            <img src="images/gmail-logo-app-icon-rounded-1.png" alt="" width="24" height="24"
-                                role="img">
-                            <span class="sr-only">Email</span>
+                        <a href="">
+                            <img src="images/gmail-logo-app-icon-rounded-1.png" alt="Gmail" width="30" height="30" title="Gmail" role="img"/>
                         </a>
+
                     </nav>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="desc-short">
+                <p><strong>"I build software applications"</strong></p>
+            </section>
 
-        <!-- About Section -->
-        <section id="about" aria-labelledby="about-heading">
-            <div class="about-me">
-                <h2 id="about-heading">About Me</h2>
-                <div class="about-intro">
-                    <p>Hello! I am Sophia Verhon Pagal, I am currently 21 years old studying Information Technology
+            <section id="about">
+                <div>
+                    <h2>About Me</h2>
+                <div>
+                <p>Hello! I am Sophia Verhon Pagal, I am currently 21 years old studying Information Technology
                         at the University of Mindanao Digos College. I live in Digos City, Davao del Sur.
                         I'm currently exploring the endless possibilities of technology and its applications in solving
                         real-world
@@ -91,325 +76,277 @@
                         to continuing to learn and grow as I pursue my academic and career goals in this field.</p>
                 </div>
 
-                <!-- Tab Navigation -->
-                <nav class="about-tabs" role="tablist" aria-label="About me sections">
-                    <button role="tab" aria-selected="true" aria-controls="education-panel" id="education-tab"
-                        class="tab-button">
-                        Education
-                    </button>
-                    <button role="tab" aria-selected="false" aria-controls="skills-panel" id="skills-tab"
-                        class="tab-button">
-                        Skills
-                    </button>
-                    <button role="tab" aria-selected="false" aria-controls="personal-panel" id="personal-tab"
-                        class="tab-button">
-                        Personal Info
-                    </button>
-                </nav>
+                 </div>
+            </section>
 
-                <!-- Tab Panels -->
-                <div class="tab-content">
-                    <div id="education-panel" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
-                        <h3 class="sr-only">Educational Background</h3>
-                        <dl class="education-list">
-                            <div class="education-item">
-                                <dt>University Of Mindanao Digos College</dt>
-                                <dt>Bachelor of Science in Information Technology</dt>
-                                <dd>2022-present</dd>
-                            </div>
-                            <div class="education-item">
-                                <dt>University Of Mindanao Digos College - Senior High</dt>
-                                <dd>2020-2022</dd>
-                            </div>
-                            <div class="education-item">
-                                <dt>Digos City National High School - Junior High</dt>
-                                <dd>2016-2020</dd>
-                            </div>
-                            <div class="education-item">
-                                <dt>San Miguel Elementary School</dt>
-                                <dd>2010-2016</dd>
-                            </div>
-                        </dl>
+            <section id="info-tabs-section">
+                <div class="container">
+                    <div class="tabs-menu">
+                        <button class="tab-btn active" onclick="openTab(event, 'education')">Education</button>
+                        <button class="tab-btn" onclick="openTab(event, 'skills')">Skills</button>
+                        <button class="tab-btn" onclick="openTab(event, 'personal')">Personal Info</button>
                     </div>
 
-                    <div id="skills-panel" role="tabpanel" aria-labelledby="skills-tab" hidden tabindex="0">
-                        <h3 class="sr-only">Technical Skills</h3>
-                        <ul class="skills-list">
-                            <li class="skill-item">
-                                <span>HTML & CSS</span>
-                                <img src="images/HTML5_Logo_512.png" alt="" role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>JavaScript</span>
-                                <img src="images/JavaScript-Emblem.png" alt="" role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>PHP</span>
-                                <img src="images/R.png" alt="" role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>MySQL</span>
-                                <img src="images/mysqli-php-database-linux-coding.jpg" alt="" role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>Firebase</span>
-                                <img src="images/png-transparent-firebase-hd-logo.png" alt="" width="20" height="20"
-                                    role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>Git & GitHub</span>
-                                <img src="images/github.jpg" alt="" width="20" height="20" role="img">
-                            </li>
-                            <li class="skill-item">
-                                <span>Figma</span>
-                                <img src="images/fi441f906-figma-logo-figma-logo-png-transparent-amp-svg-vector-freebie-supply.png"
-                                    alt="" width="20" height="20" role="img">
-                            </li>
-                        </ul>
+                    <div class="tabs-content">
+                        
+                        <div id="education" class="tab-panel active">
+                            <h3>Education</h3>
+                            <div class="edu-item">
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p>University of Mindanao Digos College | <time>2022 - Present</time></p>
+                                <h4>Senior High</h4>
+                                <p> University of Mindanao Digos College | <time>2020 - 2022 </time></p>
+                                <h4>Junior High</h4>
+                                <p>University of Mindanao Digos College | <time>2016 - 2020</time></p>
+                            </div>
+                        </div>
+
+                        <div id="skills" class="tab-panel">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-grid">
+                                <figure class="skill-item">
+                                    <img src="images/HTML5_Logo_512.png" alt="Html-logo">
+                                    <figcaption>
+                                        HTML
+                                    </figcaption>
+                                </figure>
+                                <figure class="skill-item">
+                                    <img src="images/CSS3_logo_and_wordmark.svg.png" alt="css-logo">
+                                    <figcaption>
+                                        CSS3
+                                    </figcaption>
+                                </figure>
+                                <figure class="skill-item">
+                                    <img src="images/JavaScript-Emblem.png" alt="js-logo">
+                                    <figcaption>
+                                        JAVASCRIPT
+                                    </figcaption>
+                                </figure>
+                                <figure class="skill-item">
+                                    <img src="images/R.png" alt="php-logo">
+                                    <figcaption>
+                                        PHP
+                                    </figcaption>
+                                </figure>
+                                <figure class="skill-item">
+                                    <img src="images/png-transparent-firebase-hd-logo.png" alt="firebase-logo">
+                                    <figcaption>
+                                        FIREBASE
+                                    </figcaption>
+                                </figure>
+                                <figure class="skill-item">
+                                    <img src="images/mysqli-php-database-linux-coding.jpg" alt="Mysql-logo">
+                                    <figcaption>
+                                        MySQL
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="skill-item">
+                                    <img src="images/fi441f906-figma-logo-figma-logo-png-transparent-amp-svg-vector-freebie-supply.png" alt="Mysql-logo">
+                                    <figcaption>
+                                        Figma
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div id="personal" class="tab-panel">
+                            <h3>Personal Information</h3>
+                            <ul class="personal-list">
+                                <li><strong>Age:</strong>21</li>
+                                <li><strong>Location:</strong> Digos City Davao del Sur, Philippines</li>
+                                <li><strong>Languages:</strong> English, Tagalog, Cebuano</li>
+                                <li><strong>Interests:</strong> Google console, UI/UX, Developing Applications</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="projects" >
+                <h2>Projects</h2>
+                <div class="grid-container">
+                <article>
+                    <figure>
+                        <img src="images/Screenshot 2026-03-01 160116.png" alt="Project 1" width="300" height="200" role="img"/>
+                        <h3>Fime</h3>
+                        <figcaption>
+                            <p>A mobile App for E-commerce </p>
+                        </figcaption>
+                        <span class="tech-stack">Android Studio</span>
+                        <span class="tech-stack">Java Native</span>
+                        <span class="tech-stack">Firebase</span>
+                    </figure>
+
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/project1.png" alt="Project 1" width="300" height="200" role="img"/>
+                        <h3>Higanteng Laagan</h3>
+                        <figcaption>
+                            <p>A web application for Booking Tours and Admin monitoring and management Dashboards</p>
+                        </figcaption>
+                        <span class="tech-stack">HTML&CSS</span>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">mySQL</span>
+                    </figure>
+
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/project1.png" alt="Project 1" width="300" height="200" role="img"/>
+                        <h3>Intellect-Connect</h3>
+                        <figcaption>
+                            <p>A Web and Mobile application for connecting students and teachers with live interactive sessions</p>
+                        </figcaption>
+                        <span class="tech-stack">ReactJS</span>
+                        <span class="tech-stack">Flutter</span>
+                        <span class="tech-stack">Nodejs</span>
+                        <span class="tech-stack">Firebase</span>                      
+                    </figure>
+
+                </article>
+                </div>
+              
+            </section>
+
+           <section id="Certifications-Section">
+            <h2 class="main-title">Certifications</h2>
+            
+            <div class="certifications-row">
+                
+                <div class="issuer-column">
+                    <h3>ITS Certifications</h3>
+                    <div class="stack-container" id="its-stack">
+                        <button class="arrow prev" onclick="changeCert('its-stack', -1)">❮</button>
+                        <div class="cert-deck">
+                            <article class="cert-card active">
+                                <img class="cert-logo" src="images/html_css.png" alt="ITS-HTML&CSS">
+                                <h4>HTML&CSS</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/database_cert.png" alt="ITS-DATABASE">
+                                <h4>DATABASE</h4>
+                            </article>
+                        </div>
+                        <button class="arrow next" onclick="changeCert('its-stack', 1)">❯</button>
+                    </div>
+                </div>
+
+                <div class="issuer-column">
+                    <h2>Tesda Certifications</h2>
+                    <div class="stack-container" id="tesda-stack">
+                        <button class="arrow prev" onclick="changeCert('tesda-stack', -1)">❮</button>
+                        <div class="cert-deck">
+                            <article class="cert-card active">
+                                <img class="cert-logo" src="images/Tesda_maintainingNetworks.png" alt="Maintaining Networks">
+                                <h4>Maintaining Computer Systems and Networks</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Tesda_Css.png" alt="CSS">
+                                <h4>Introduction to CSS</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Tesda_Computer_networks.png" alt="CSS">
+                                <h4>Setting Up Computer Networks</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Tesda_Servers.png" alt="CSS">
+                                <h4>Setting Up Computer Servers</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Configuring_tesda.png" alt="CSS">
+                                <h4>Installing and Configuring Computer Systems</h4>
+                            </article>
+                            </div>
+                        <button class="arrow next" onclick="changeCert('tesda-stack', 1)">❯</button>
+                    </div>
+                </div>
+
+                <div class="issuer-column">
+                    <h2>Cisco Certifications</h2>
+                    <div class="stack-container" id="cisco-stack">
+                        <button class="arrow prev" onclick="changeCert('cisco-stack', -1)">❮</button>
+                        <div class="cert-deck">
+                            <article class="cert-card active">
+                                <img class="cert-logo" src="images/Cybersec_cisco.png" alt="Cybersecurity">
+                                <h4>Introduction to Cybersecurity</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Cyberthreat_cisco.png" alt="Cyberthreat">
+                                <h4>Cyber Threat Management</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/Network_defense_cisco.png" alt="Network Defense">
+                                <h4>Network Defense</h4>
+                            </article>
+                        </div>
+                        <button class="arrow next" onclick="changeCert('cisco-stack', 1)">❯</button>
+                    </div>
+                </div>
+                <div class="issuer-column">
+                    <h2>Cisco Courses</h2>
+                    <div class="stack-container" id="courses-stack">
+                        <button class="arrow prev" onclick="changeCert('courses-stack', -1)">❮</button>
+                        <div class="cert-deck">
+                            <article class="cert-card active">
+                                <img class="cert-logo" src="images/coursecompletion1.png" alt="Course1">
+                                <h4>Cyber Threat Management</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/coursecompletion2.png" alt="Course2">
+                                <h4>Network Defense</h4>
+                            </article>
+                            <article class="cert-card">
+                                <img class="cert-logo" src="images/coursecompleyion3.png" alt="Course3">
+                                <h4>Introduction to Cybersecurity</h4>
+                            </article>
+                        </div>
+                        <button class="arrow next" onclick="changeCert('courses-stack', 1)">❯</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h4>Reach Out Directly</h4>
+                        <address>
+                            <p><strong>Email:</strong> <a href="mailto:pgssvap@gmail.com">pgssvap@gmail.com</a></p>
+                            <p><strong>Phone:</strong> +63 991 878 3695</p>
+                            <p><strong>Location:</strong> Digos City, Davao del Sur Philippines</p>
+                        </address>
                     </div>
 
-                    <div id="personal-panel" role="tabpanel" aria-labelledby="personal-tab" hidden tabindex="0">
-                        <h3 class="sr-only">Personal Information</h3>
-                        <dl class="personal-info">
-                            <div class="info-item">
-                                <dt>Age:</dt>
-                                <dd>21 Years old</dd>
-                            </div>
-                            <div class="info-item">
-                                <dt>Degree:</dt>
-                                <dd>Bachelor of Science in Information Technology</dd>
-                            </div>
-                            <div class="info-item">
-                                <dt>Birthdate:</dt>
-                                <dd>September 1, 2004</dd>
-                            </div>
-                            <div class="info-item">
-                                <dt>Address:</dt>
-                                <dd>San Miguel Digos City, Davao del Sur, Philippines</dd>
-                            </div>
-                        </dl>
+                    <div class="contact-form-container">
+                        <h4>Get in Touch</h4>
+                        <form action="https://formspree.io/f/your-id" method="POST">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                            
+                            <button type="submit">Send Message</button>
+                        </form>
                     </div>
                 </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Sophia Verhon Pagal. All rights reserved.</p>
+            </footer>
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>>
+                <img id="modalImg" class="modal-content">
             </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <header class="projects-header">
-                <h2 id="projects-heading">Projects</h2>
-            </header>
-            <div class="projects-scroll-wrapper">
-                <div class="projects-container" role="region" aria-label="Project showcase">
-                    <article class="projects-box">
-                        <div class="project-info">
-                            <figure class="frame-mobile">
-                                <img src="images/iPhone 14 & 15 Pro Max - 4.png"
-                                    alt="Fime mobile application interface">
-                            </figure>
-                            <div class="project-details">
-                                <h3 class="project-title">Fime Mobile Application</h3>
-                                <p>Fime is a mobile application an E-commerce application </p>
-                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
-                                    <span class="tech-tools" role="listitem">Android Studio</span>
-                                    <span class="tech-tools" role="listitem">Java Native</span>
-                                    <span class="tech-tools" role="listitem">Firebase</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="projects-box">
-                        <div class="project-info">
-                            <figure class="frame-web">
-                                <img src="images/advertisement.jpg"
-                                    alt="Higanteng Laagan web application interface">
-                            </figure>
-                            <div class="project-details">
-                                <h3 class="project-web">Higanteng Laagan Web Application</h3>
-                                <p>Higanteng laagan travel and tours web application is a booking management system that
-                                    lets users
-                                    book tours
-                                </p>
-                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
-                                    <span class="tech-tools" role="listitem">PHP</span>
-                                    <span class="tech-tools" role="listitem">JavaScript</span>
-                                    <span class="tech-tools" role="listitem">MySQL</span>
-                                    <span class="tech-tools" role="listitem">HTML&CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="projects-box">
-                        <div class="project-info">
-                            <figure class="frame-mobile">
-                                <img src="images/iPhone 14 & 15 Pro Max - 4.png" alt="Sample project 3 interface">
-                            </figure>
-                            <div class="project-details">
-                                <h3 class="project-title">Sample Project 3</h3>
-                                <p>This is a sample third project to demonstrate the horizontal scrolling functionality.
-                                    You can add more projects here.</p>
-                                <div class="tech-tools-container" role="list" aria-label="Technologies used">
-                                    <span class="tech-tools" role="listitem">React</span>
-                                    <span class="tech-tools" role="listitem">Node.js</span>
-                                    <span class="tech-tools" role="listitem">MongoDB</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" aria-labelledby="certifications-heading">
-            <h2 id="certifications-heading">Certifications</h2>
-            <div class="cert-grid" role="list">
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 054052.png" alt="Microsoft Certificate" class="cert-logo">
-                    <h3>Microsoft Certificate</h3>
-                    <div class="issuer">Coursebank</div>
-                    <time class="date" datetime="2022">2022</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 054001.png" alt="Designing Certificate" class="cert-logo">
-                    <h3>Designing Certificate</h3>
-                    <div class="issuer">Coursebank</div>
-                    <time class="date" datetime="2022">2022</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 054543.png" alt="Navigating Google Workspace Certificate"
-                        class="cert-logo">
-                    <h3>Naviagating Google Workspace Certificate</h3>
-                    <div class="issuer">Coursebank</div>
-                    <time class="date" datetime="2022">2022</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/greatlearning.png" alt="Basic Programming Certificate" class="cert-logo">
-                    <h3>Basic Programming</h3>
-                    <div class="issuer">Greatlearning</div>
-                    <time class="date" datetime="2022">2022</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 051532.png" alt="Basic Programming Certificate"
-                        class="cert-logo">
-                    <h3>Installing and Configuring Computer Systems </h3>
-                    <div class="issuer">Tesda</div>
-                    <time class="date" datetime="2022">2022</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 051604.png" alt="Basic Programming Certificate"
-                        class="cert-logo">
-                    <h3>Setting Up Computer Servers</h3>
-                    <div class="issuer">Tesda</div>
-                    <time class="date" datetime="2025">2025</time>
-                </article>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 051457.png" alt="Basic Programming Certificate"
-                        class="cert-logo">
-                    <h3>Setting Up Computer Networks</h3>
-                    <div class="issuer">Tesda</div>
-                    <time class="date" datetime="2025">2025</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 051626.png" alt="Basic Programming Certificate"
-                        class="cert-logo">
-                    <h3>Mainting Computer System and Networks</h3>
-                    <div class="issuer">Tesda</div>
-                    <time class="date" datetime="2025">2025</time>
-                </article>
-                <article class="cert-card" role="listitem">
-                    <img src="images/Screenshot 2025-12-11 051640.png" alt="Basic Programming Certificate"
-                        class="cert-logo">
-                    <h3>Introduction To Css</h3>
-                    <div class="issuer">Tesda</div>
-                    <time class="date" datetime="2025">2025</time>
-                </article>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <address class="contact-details">
-                        <div class="contact-item">
-                            <h3>Email address</h3>
-                            <a href="mailto:pgssvap@gmail.com" aria-label="Send email to Sophia">📧
-                                pgssvap@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Contact Number</h3>
-                            <a href="tel:+639918783695" aria-label="Call Sophia">📱 09918783695</a>
-                        </div>
-                        <div class="contact-item">
-                            <h3>City address</h3>
-                            <span>📍 Digos City, Davao del Sur, Philippines</span>
-                        </div>
-                    </address>
-                </div>
-
-                <div class="contact-form-container">
-                    <form class="contact-form" action="#" method="POST" novalidate>
-                        <h3 class="sr-only">Contact Form</h3>
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="sr-only">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Your Message" class="contact-textarea"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="message-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Screen reader only styles -->
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-
-        .skip-link:focus {
-            top: 6px;
-        }
-    </style>
-    <script src="tab.js"></script>
+    <script src="js/tabss.js"></script>
     <script src="modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="cv-download.js"></script>
-
-
-</body>
-
+  </body>
 </html>
