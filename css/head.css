@@ -989,6 +989,12 @@ footer {
   background-color: rgba(0,0,0,0.9);
 }
 
+.modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-content {
   display: block;
   margin: auto;
@@ -998,6 +1004,12 @@ footer {
   border-radius: 10px;
 }
 
+.modal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .close {
   position: absolute;
   top: 20px;
@@ -1005,6 +1017,22 @@ footer {
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #ffffff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-arrow {

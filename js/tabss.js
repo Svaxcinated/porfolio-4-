@@ -25,7 +25,8 @@ function changeCert(stackIdOrDirection, direction) {
         container = document.getElementById(stackIdOrDirection);
     } else {
         container = event.target.closest('.stack-container');
-        direction = stackIdOrDirection;   }
+        direction = stackIdOrDirection;
+    }
 
     const cards = container.querySelectorAll('.cert-card');
     let activeIndex = Array.from(cards).findIndex(card => card.classList.contains('active'));
@@ -42,49 +43,3 @@ function changeCert(stackIdOrDirection, direction) {
 
     cards[activeIndex].classList.add('active');
 }
-
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImg");
-const closeBtn = document.querySelector(".close");
-
-
-const images = document.querySelectorAll("article img");
-
-images.forEach(img => {
-    img.addEventListener("click", function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    });
-});
-
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-};
-
-
-modal.onclick = function(e) {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-};
-
-function closeModal() {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-}
-
-images.forEach(img => {
-    img.addEventListener("click", function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        document.body.style.overflow = "hidden";
-    });
-});
-
-closeBtn.onclick = closeModal;
-
-modal.onclick = function(e) {
-    if (e.target === modal) {
-        closeModal();
-    }
-};
